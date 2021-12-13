@@ -206,20 +206,14 @@ background-color:var(--brand-color);
     color: var(--brand-color);
 }
 
+
+/* Свойство fill: currentColor; чтобы ионка просто наследовала цвет родителя))) */
 .unit{
     margin-right: 10px;
-    fill: var(--text);
+    /* fill: var(--text); */
+    fill: currentColor;
 }
 
-.header-connection .icon:hover,
-.header-connection .icon:focus{
-    fill: var(--brand-color);
-}
-
-.header-connection .icon:hover .unit,
-.header-connection .icon:focus .unit{
-    fill: var(--brand-color);
-}
 
 /* Герой секция */
 .hero{
@@ -424,7 +418,8 @@ background-image: url(../images/icon/icon-antenna.svg);
     fill: #AFB1B8;
 }
 
-.social-icons .icons:hover{
+.social-icons .icons:hover,
+.social-icons .icons:focus{
     fill: var(--bg-color);
     background-color: var(--brand-color);
 }
@@ -499,7 +494,8 @@ margin-left: 30px;
     fill: #AFB1B8;
 }
 
-.company:hover{
+.company:hover,
+.company:focus{
     fill: var(--brand-color);
     border: 1px solid var(--brand-color);
 }
@@ -687,7 +683,8 @@ margin-left: 30px;
     fill: var(--bg-color);
 }
 
-.social-icons-footer .icons:hover{
+.social-icons-footer .icons:hover,
+.social-icons-footer .icons:focus{
     background-color: var(--brand-color);
 }
 /* Соц.сети иконки в футуре*/
